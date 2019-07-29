@@ -1,14 +1,21 @@
 import React from 'react';
 import './App.css';
+import { observer, inject } from 'mobx-react';
 
-function App() {
-  return (
-    <div className="App">
+
+@inject('store')
+@observer
+class App extends React.Component {
+  render() {
+
+    return (
+      <div className="App">
       
-          Learn React
+          <h1> { this.props.store.string } </h1>
       
     </div>
-  );
+    );
+  }
 }
 
 export default App;
