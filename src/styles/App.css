@@ -1,0 +1,10 @@
+.App {
+    background-color: black;
+    width: 248px;
+    margin: 200px auto;
+    border: solid 5px black;
+}
+
+.row {
+    display: flex;
+}
