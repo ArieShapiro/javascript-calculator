@@ -4,9 +4,9 @@ import '../styles/Button.css';
 
 @inject('store')
 class Button extends React.Component {
-    handleKeypress = key => {
-      this.props.store.handleKeypress(key);      
-    }
+    // handleKeypress = key => {
+    //   this.props.store.handleKeypress(key);      
+    // }
     render() {
         let styleObj = {};
         //normal
@@ -29,10 +29,11 @@ class Button extends React.Component {
             };
         }
         const key = this.props.type;
+        const store = this.props.store;
         return (
             <div className="Button"
                 style={{ width: styleObj.width, height: styleObj.height }}
-                onClick={() => { this.handleKeypress(key) }}
+                onClick={() => { store.handleKeypress(key) }}
             >
                 <p>{key}</p>
             </div>

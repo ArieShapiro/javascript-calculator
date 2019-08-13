@@ -6,12 +6,12 @@ import '../styles/Console.css';
 @observer
 class Console extends React.Component {
     render() {
-        const isEqual = this.props.store.isEqual;
-        const store = this.props.store;
+        const consoleTop = this.props.store.consoleTop;
+        const consoleButtom = this.props.store.consoleButtom;
         return (
             <div className="Console">
-                <h3>{isEqual ? store.input : store.input}</h3>
-                <h3>{isEqual ? store.lastInput : store.lastInput}</h3>
+                <h3 className="top">{consoleTop}</h3>
+                <h3 className="buttom">{consoleButtom}</h3>
             </div>
         )
     }

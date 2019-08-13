@@ -1,8 +1,9 @@
 .App {
-    background-color: black;
+    background-color: #484c44;
     width: 248px;
-    margin: 200px auto;
-    border: solid 5px black;
+    margin: 97px auto;
+    border: solid 2px #212120;
+    box-shadow: 3px 3px 5px;
 }
 
 .row {
