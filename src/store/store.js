@@ -27,45 +27,7 @@ class Store {
         this.consoleTop += ` ${key} `;
     }
 
-    //********************functions******************//
-    convertToMathExpression = string => {
-        return eval(string);
-    }
-    // convertToMathExpression = string => {
-    //     // debugger
-    //     let operator, number, sum;
-    //     string = string.split(' ');
-    //     string.forEach(char => {
-    //         //if number
-    //         if (!isNaN(char)) {
-    //             number = parseFloat(char);
-    //             //if sum is empty - put this first number there
-    //             sum = !sum ? number : sum;
-    //             //if comes after operator
-    //             if (operator) {
-    //                 switch (operator) {
-    //                     case '+':
-    //                         sum += number;
-    //                         break;
-    //                     case '-':
-    //                         sum -= number;
-    //                         break;
-    //                     case 'x':
-    //                         sum *= number;
-    //                         break;
-    //                     case '/':
-    //                         sum /= number;
-    //                         break;
-    //                 }
-    //             }
-    //             operator = null;
-    //         }
-    //         //if operator
-    //         else operator = char;
-    //     });
-    //     return sum;
-    // }
-
+    /**************functions******************/
     handleKeypress = key => {
         if (key === '=') {
             this.handleEqual();

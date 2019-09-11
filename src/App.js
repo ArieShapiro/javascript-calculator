@@ -5,8 +5,6 @@ import Console from './components/Console.js';
 import './styles/App.css';
 
 
-
-
 @inject('store')
 @observer
 class App extends React.Component {
@@ -17,7 +15,7 @@ class App extends React.Component {
         <Console />
         <div className="row">
           <Button width={2} type='AC' />
-          <Button type='/'/>
+          <Button type='/' />
           <Button type='x' />
         </div>
         <div className="row">
